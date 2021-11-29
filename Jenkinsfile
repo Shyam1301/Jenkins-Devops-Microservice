@@ -5,7 +5,7 @@ pipeline {
 	   PATH = "$mavenHome/bin:$PATH"
 	}
 	stages{
-        stage('Checkout') {
+        stage('Build') {
 		 steps{
 			   sh 'mvn --version'
 			   echo "Build"
